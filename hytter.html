@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Min Hytte - hytter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>  <!--Bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!--jQuery-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  <!--Bootstrap-->
+    <script src="js/scripts.js"></script>  <!--JS-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>  <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="icon" href="pic/hytte_ico.png"/>
+    <script>$(document).ready(function (){
+        footer();
+        find_modal();
+        updateButton();
+        on_mouse_hover();
+    });</script>
+
+</head>
+
+
+
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <!--Create button icon-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img id="logo_icon" src="pic/logo.png" alt="Logo icon"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="nav navbar-nav">
+                <li id="Hjem"><a href="index.html">Hjem</a></li>
+                <li class="nav-item active" id="Hytter"><a href="hytter.html">Hytter</a></li>
+                <li id="Hytteliv"><a href="hytteliv.html">Hytteliv</a></li>
+                <li id="Nyttige-lenker"><a href="nyttige-lenker.html">Nyttige lenker</a></li>
+                <li id="Om-oss"><a href="index.html#about_us">Om oss</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container text-center">
+
+    <div class="row" id="row1">
+        <div class="col-sm-1">
+        </div>
+
+        <div class="col-sm-10">
+            <h1>
+                Vår hyttetilbud
+            </h1>
+            <hr/>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                pretium ipsum suscipit.
+            </p>
+            <p>
+                Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+            </p>
+
+            <hr/>
+
+
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+    </div>
+
+</div>
+
+<div class="container text-center">
+    <div class="row" id="row2">
+        <div class="col-sm-1">
+        </div>
+
+        <div class="col-sm-10">
+            <h4>Filtrer hytter etter beliggenhet:  </h4>
+            <div class="btn-group btn-group-lg" id="filter_button_group" data-toggle="buttons">
+                <button type="button" class="btn btn-primary active">Alle</button>
+                <button type="button" class="btn btn-primary">Sjø</button>
+                <button type="button" class="btn btn-primary">Skog</button>
+                <button type="button" class="btn btn-primary">Fjell</button>
+            </div>
+        </div>
+
+        <div class="col-sm-1">
+        </div>
+
+    </div>
+</div>
+
+<div class="container text-center" id="image_grid">
+    <br/>
+    <div class="row" id="row3">
+        <div class="col-sm-4 column forest" id="mondal_start">
+            <img class="forest" src="pic/cabins/cabin1.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+                <div class="informations">
+                    <div class="cabin_id">1</div>
+
+                    <div class="tittle">Litt annerledes hytte</div>
+                    <div class="beds">0</div>
+                    <div class="bathroom">0</div>
+                    <div class="electricity">nei</div>
+                    <div class="place">Nordmarka</div>
+                    <div class="price_pr_hour">50</div>
+                    <div class="price_pr_day">500</div>
+
+                    <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                        Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                        Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                        pretium ipsum suscipit.
+                    </div>
+                    <div class="description_2">
+                        Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                        quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                        laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                        ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="col-sm-4 column sea">
+            <img class="sea" src="pic/cabins/cabin7.jpg " alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+                <div class="informations">
+                    <div class="cabin_id">2</div>
+                    <div class="tittle">Kos ved sjøen</div>
+                    <div class="beds">5</div>
+                    <div class="bathroom">2</div>
+                    <div class="electricity">ja</div>
+                    <div class="place">Kragerø</div>
+                    <div class="price_pr_hour">250</div>
+                    <div class="price_pr_day">2500</div>
+
+                    <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                        Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                        Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                        pretium ipsum suscipit.
+                    </div>
+                    <div class="description_2">
+                        Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                        quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                        laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                        ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin13.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+                <div class="informations">
+                    <div class="cabin_id">3</div>
+                    <div class="tittle">Vakre Norefjell</div>
+                    <div class="beds">3</div>
+                    <div class="bathroom">1</div>
+                    <div class="electricity">ja</div>
+                    <div class="place">Norefjell</div>
+                    <div class="price_pr_hour">150</div>
+                    <div class="price_pr_day">1200</div>
+
+                    <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                        Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                        Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                        pretium ipsum suscipit.
+                    </div>
+                    <div class="description_2">
+                        Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                        quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                        laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                        ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin2.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">4</div>
+
+                <div class="tittle">Opplev Sørkedalen</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Sørkedalen</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin3.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">5</div>
+                <div class="tittle">Med Rokosjøen som nærmeste nabo</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Rokosjøen</div>
+                <div class="price_pr_hour">150</div>
+                <div class="price_pr_day">1200</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin4.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">6</div>
+
+                <div class="tittle">Hytte i Stange</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Stange</div>
+                <div class="price_pr_hour">150</div>
+                <div class="price_pr_day">1200</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin5.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">7</div>
+
+                <div class="tittle">Ringkollen</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Hønefoss</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin6.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">8</div>
+
+                <div class="tittle">Inn i skogen</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Ringkollen</div>
+                <div class="price_pr_hour">150</div>
+                <div class="price_pr_day">1200</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin8.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">9</div>
+
+                <div class="tittle">Vekk på Valdres</div>
+                <div class="beds">1</div>
+                <div class="bathroom">0</div>
+                <div class="electricity">nei</div>
+                <div class="place">Valdresflya</div>
+                <div class="price_pr_hour">50</div>
+                <div class="price_pr_day">500</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column sea">
+            <img class="sea" src="pic/cabins/cabin9.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">10</div>
+
+                <div class="tittle">Besøk Sunnmøre</div>
+                <div class="beds">3</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Sande</div>
+                <div class="price_pr_hour">150</div>
+                <div class="price_pr_day">1500</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin10.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">11</div>
+
+                <div class="tittle">Hytte 11</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Hytteland</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin11.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">12</div>
+
+                <div class="tittle">Hytte 12</div>
+                <div class="beds">3</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Et Sted</div>
+                <div class="price_pr_hour">150</div>
+                <div class="price_pr_day">1200</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin12.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">13</div>
+
+                <div class="tittle">Hytte 13</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Gudbrandsdal</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin14.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">14</div>
+
+                <div class="tittle">Hytte 14</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Otta</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin15.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">15</div>
+
+                <div class="tittle">Hytte 15</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Kvitfjell</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin16.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">16</div>
+
+                <div class="tittle">Hytte 16</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Geilo</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column sea">
+            <img class="sea" src="pic/cabins/cabin17.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">17</div>
+
+                <div class="tittle">Hytte 17</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Måløy</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column sea">
+            <img class="sea" src="pic/cabins/cabin18.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">18</div>
+
+                <div class="tittle">Hytte 18</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Urke</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column sea">
+            <img class="sea" src="pic/cabins/cabin20.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">19</div>
+
+                <div class="tittle">Hytte 19</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Nærsnes</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column mountain">
+            <img class="mountain" src="pic/cabins/cabin21.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">20</div>
+
+                <div class="tittle">Hytte 20</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Hemsedal</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column sea">
+            <img class="sea" src="pic/cabins/cabin22.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">21</div>
+
+                <div class="tittle">Hytte 21</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Fredrikstad</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin19.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">22</div>
+
+                <div class="tittle">Hytte 22</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Sverige</div>
+                <div class="price_pr_hour">50</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin23.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">23</div>
+
+                <div class="tittle">Hytte 23</div>
+                <div class="beds">2</div>
+                <div class="bathroom">1</div>
+                <div class="electricity">ja</div>
+                <div class="place">Kongsvinger</div>
+                <div class="price_pr_hour">100</div>
+                <div class="price_pr_day">700</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-4 column forest">
+            <img class="forest" src="pic/cabins/cabin24.jpg" alt="cabin_picture">
+            <br/>
+            <br/>
+            <h4 class="tittle"></h4>
+            <label>Senger:</label> <span class="beds"></span><br/>
+            <label>Baderom:</label> <span class="bathroom"></span><br/>
+            <label>Elekrisitet:</label> <span class="electricity"></span><br/>
+            <label>Beliggenhet:</label> <span class="place"></span>
+            <div class="informations">
+                <div class="cabin_id">24</div>
+
+                <div class="tittle">Siste hytte</div>
+                <div class="beds">4</div>
+                <div class="bathroom">2</div>
+                <div class="electricity">ja</div>
+                <div class="place">Løten</div>
+                <div class="price_pr_hour">250</div>
+                <div class="price_pr_day">3000</div>
+
+                <div class="description_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum eros ac eros imperdiet porttitor.
+                    Cras tincidunt, tortor nec tincidunt tristique, turpis lacus imperdiet ante, at mollis felis est ac felis.
+                    Aliquam sed dui at augue pulvinar facilisis in vitae sem. Nam bibendum massa non tortor varius, nec
+                    pretium ipsum suscipit.
+                </div>
+                <div class="description_2">
+                    Suspendisse potenti. Nam id elit pulvinar, finibus enim vitae, tincidunt nisi. Vivamus a efficitur nunc,
+                    quis rutrum justo. Sed quam lacus, ornare eu mollis nec, consequat a ex. Mauris luctus nec erat at
+                    laoreet. Sed accumsan eros eu sapien ultricies, a finibus dui dictum. Morbi placerat, ipsum ut imperdiet
+                    ornare, nisl quam eleifend mi, sed consequat sapien nulla at massa.
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="container">
+    <div class="modal fade" id="cabin_modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title" id="modal_tittle">Tittle</h2>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-sm-10 modal_pic_holder">
+                                <br/>
+                                <img src="pic/hytte_ico.png" alt="Bilde av hytte"/>
+                            </div>
+                            <div class="col-sm-2 modal_info_holder">
+                                <h2>Fasiliteter</h2>
+                                <hr/>
+                                <h4>Senger: <span class="beds"></span></h4><br/>
+                                <h4>Baderom: <span class="bathroom"></span></h4><br/>
+                                <h4>Elekrisitet: <span class="electricity"></span></h4><br/>
+                                <h4>Beliggenhet: <span class="place"></span></h4><br/>
+                                <h4>Pris per time: <span class="price_pr_hour"></span></h4><br/>
+                                <h4>Pris per døgn: <span class="price_pr_day"></span></h4><br/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-11">
+                            <h2>Beskrivelse</h2>
+                            <hr/>
+
+                                <p>
+                                    <span class="description_1"></span>
+                                    <br/>
+                                    <br/>
+                                    <span class="description_2"></span>
+                                </p>
+
+                        </div>
+
+                    </div>
+                    <br/>
+                    <div class="row">
+
+                            <div class="col-lg-11">
+                                <div id="form-holder"></div>
+                            </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" onclick="close_modal()">Lukk</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<br/>
+<div id="footer-holder">
+</div>
+
+</body>
+</html>

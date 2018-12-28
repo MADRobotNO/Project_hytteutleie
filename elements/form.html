@@ -1,0 +1,78 @@
+<form name="order_form" onSubmit="return valid_form_and_send();" onreset="reset_val();">
+    <fieldset id="form">
+        <br/>
+        <legend><b>Bestill denne hytte!</b></legend>
+        <table>
+            <tr>
+                <td><label for="navn">Førnavn:</label></td>
+                <td><input type="text" id="navn" name="input_data"/></td>
+                <td><p id="navn_alert"></p></td>
+            </tr>
+            <tr>
+                <td><label for="etternavn">Etternavn: </label></td>
+                <td><input type="text" id="etternavn" name="input_data"/></td>
+                <td><p id="etternavn_alert"></p></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-post: </label></td>
+                <td><input type="email" id="email" name="input_data"/></td>
+                <td><p id="email_alert"></p></td>
+            </tr>
+
+            <tr>
+                <td><label for="tel">Tel.nr.: </label></td>
+                <td><input type="tel" id="tel" name="input_data"/></td>
+                <td><p id="tel_alert"></p></td>
+            </tr>
+        </table>
+        <br/>
+
+        <p>Datoer for opphold:</p>
+            <div class='input-date-grooup'>
+                <table>
+                    <tr>
+                        <td><label for="from_date">Fra:</label></td>
+                        <td><input type='datetime-local' class="form-control" id="from_date"/></td>
+                        <td><p id="date_from_alert"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="to_date">Til:</label></td>
+                        <td><input type='datetime-local' class="form-control" id="to_date"/></td>
+                        <td><p id="date_to_alert"></p></td>
+                    </tr>
+                </table>
+            </div>
+
+        <div class="nedvask">
+            <br/>
+            <p>Ønsker du å bestille nedvask?</p>
+
+            <input type="checkbox" id="nedvask"/><label for="nedvask">  Ja, jeg ønsker nedvask mot tillegg i pris.</label>
+        </div>
+        <br/>
+
+        <div class="medlemskap" >
+            <fieldset id="medlem">
+                <p>Medlem i Turistforeningen? (som medlem får du 15% rabatt)</p>
+                <p id="medlem_alert"></p>
+                <table>
+                    <tr>
+
+                        <td><input type="radio" name="medlem" id="medlem_ja"/></td>
+                        <td><label for="medlem_ja">Ja</label></td>
+                    </tr>
+                    <tr>
+
+                        <td><input type="radio" name="medlem" id="medlem_nei"/></td>
+                        <td><label for="medlem_nei">Nei</label></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </div>
+
+        <br/>
+    </fieldset>
+    <input type="submit" name="knapp" id="Submit" value="Bestill"/>
+    <input type="reset" name="knapp" id="Reset" value="Tøm"/>
+</form>
